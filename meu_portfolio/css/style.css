@@ -7,7 +7,8 @@
 body {
     font-family: "Andale Mono", monospace;
     line-height: 1.6;
-    color: #f5f5f5;
+    color: #ffffff;
+
     background-image: url("../imagens/fundo.jpg");
     background-size: cover;
     background-position: center;
@@ -15,30 +16,32 @@ body {
     background-attachment: fixed;
 }
 
+/* HEADER */
 
 .header {
-    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
 }
 
+/* TOPO (AGORA CENTRALIZADO) */
 
 .topo {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 700px;
+    width: 100%;
     padding: 20px;
 
-    display: grid;
-    grid-template-columns: 1fr 1.3fr 1fr;
-    gap: 40px;
-    align-items: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
 }
 
+/* PERFIL */
 
 .perfil {
-    grid-column: 2;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0);
-    padding: 30px;
-    border-radius: 16px;
+    width: 100%;
 }
 
 .perfil img {
@@ -46,54 +49,45 @@ body {
     height: 160px;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid rgba(255, 255, 255, 0.8);
+    border: 3px solid #ffffff;
     margin-bottom: 15px;
 }
 
 .perfil h1 {
     font-size: 2.2em;
-    margin-bottom: 6px;
-    color: #ffffff;
+    margin-bottom: 5px;
 }
 
-.perfil .subtitulo {
-    font-size: 1.1em;
+.subtitulo {
     color: #dddddd;
     margin-bottom: 15px;
 }
 
 .perfil hr {
-    width: 60%;
     margin: 15px auto;
+    width: 60%;
     border: none;
     height: 1px;
-    background-color: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.4);
 }
 
 .perfil p {
     color: #eeeeee;
 }
 
+/* CARDS */
 
 .card {
-    background-color: rgba(0, 0, 0, 0.45);
-    backdrop-filter: blur(4px);
+    width: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(6px);
     padding: 25px;
     border-radius: 16px;
-}
-
-
-.topo .card:nth-of-type(1) {
-    grid-column: 1;
-}
-
-
-.topo .card:nth-of-type(2) {
-    grid-column: 3;
+    text-align: center;
 }
 
 .card h2 {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     color: #ffffff;
 }
 
@@ -101,6 +95,7 @@ body {
     color: #eaeaea;
 }
 
+/* LINKS */
 
 .card a {
     color: #7db8ff;
@@ -112,32 +107,49 @@ body {
     text-decoration: underline;
 }
 
+/* CONTEÚDO (PROJETOS) */
 
 .conteudo {
-    max-width: 1200px;
+    max-width: 700px;
     margin: 40px auto;
     padding: 20px;
 }
 
-
 .projetos {
-    max-width: 700px;
-    margin: 0 auto;
     text-align: center;
 }
 
+/* RODAPÉ */
 
-@media (max-width: 900px) {
-    .topo {
-        grid-template-columns: 1fr;
-        text-align: center;
+.rodape {
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(6px);
+
+    color: #ccc;
+}
+
+.rodape a {
+    color: #7db8ff;
+    text-decoration: none;
+}
+
+.rodape a:hover {
+    text-decoration: underline;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 600px) {
+    .perfil img {
+        width: 130px;
+        height: 130px;
     }
 
-    .perfil {
-        grid-column: auto;
-    }
-
-    .topo .card {
-        grid-column: auto;
+    .perfil h1 {
+        font-size: 1.8em;
     }
 }
