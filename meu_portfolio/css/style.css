@@ -4,11 +4,15 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Andale Mono", monospace;
     line-height: 1.6;
     color: #ffffff;
-
+    padding-top: 80px;
     background-image: url("../imagens/fundo.jpg");
     background-size: cover;
     background-position: center;
@@ -119,6 +123,10 @@ body {
     text-align: center;
 }
 
+section {
+    scroll-margin-top: 100px;
+}
+
 /* RODAPÉ */
 
 .rodape {
@@ -155,7 +163,6 @@ body {
     margin-bottom: 25px;
 }
 
-
 .projeto-card img {
     width: 100%;
     max-width: 220px;
@@ -187,6 +194,42 @@ body {
 #habilidades strong {
     display: block;
     margin-top: 15px;
+}
+
+/* NAVBAR */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+
+    z-index: 1000;
+}
+
+.menu a {
+    margin-right: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #7db8ff;
+}
+
+.idioma button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
 @media (max-width: 600px) {

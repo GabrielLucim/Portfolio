@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <title>Meu Portfólio</title>
@@ -8,181 +9,115 @@
 
 <body>
 
-<header class="header">
-    <div class="topo">
-
-        <div class="perfil">
-            <img src="imagens/perfil.png" alt="Foto de perfil">
-
-            <h1>Gabriel Dos Anjos Lucim</h1>
-            <p class="subtitulo">Estudante de TI • Desenvolvedor</p>
-
-            <hr>
-
-            <p>
-                Sou estudante do Instituto Federal do Paraná, atuo na área de
-                Tecnologia da Informação como desenvolvedor em projetos.
-            </p>
+    <nav class="navbar">
+        <div class="menu">
+            <a href="#sobre" data-i18n="menu_sobre">Sobre</a>
+            <a href="#habilidades" data-i18n="menu_habilidades">Habilidades</a>
+            <a href="#educacao" data-i18n="menu_educacao">Educação</a>
+            <a href="#contato" data-i18n="menu_contato">Contato</a>
+            <a href="#projetos" data-i18n="menu_projetos">Projetos</a>
         </div>
 
-        <section class="card">
-            <h2>Sobre mim</h2>
-            <p>
-                Tenho 19 anos, formado no Paroquial, estudo programação desde 2021, possuo ótima comunicação,
-                conhecimento e experiência pedagógica com a aplicação de minicursos,
-                além de experiência como desenvolvedor
-            </p>
+        <div class="idioma">
+            <button onclick="trocarIdioma('pt')">PT</button>
+            <button onclick="trocarIdioma('en')">EN</button>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="topo">
+
+            <div class="perfil">
+                <img src="imagens/perfil.png" alt="Foto de perfil">
+
+                <h1>Gabriel Dos Anjos Lucim</h1>
+                <p class="subtitulo">Estudante de TI • Desenvolvedor</p>
+
+                <hr>
+
+                <p data-i18n="perfil_texto">
+                    Sou estudante do Instituto Federal do Paraná, atuo na área de
+                    Tecnologia da Informação como desenvolvedor em projetos.
+                </p>
+            </div>
+
+            <section class="card" id="sobre">
+                <h2 data-i18n="sobre_titulo">Sobre mim</h2>
+                <p data-i18n="sobre_texto">
+                    Tenho 19 anos, estudo programação desde 2021, possuo ótima comunicação,
+                    conhecimento e experiência pedagógica com a aplicação de minicursos,
+                    além de experiência como desenvolvedor
+                </p>
+            </section>
+
+            <section class="card" id="habilidades">
+                <h2 data-i18n="habilidades_titulo">Habilidades</h2>
+
+                <p data-i18n="habilidades_linguagens">
+                    <strong>Linguagens com experiência e em estudo:</strong><br>
+                    Java, Python, Dart/Flutter, SQL, HTML, JavaScript, CSS, React e C++
+                </p>
+
+                <p data-i18n="habilidades_ferramentas">
+                    <strong>Ferramentas e Tecnologias:</strong><br>
+                    Git, GitHub, Maven, XAMPP, Flutter, VS Code, Eclipse e PostgreSQL
+                </p>
+
+                <p data-i18n="habilidades_conhecimentos">
+                    <strong>Conhecimentos:</strong><br>
+                    Programação Orientada a Objetos, Estruturas de Dados,
+                    Desenvolvimento Web, Integração com APIs, Desenvolvimento para Dispositivos Móveis e
+                    Construção de Software
+                </p>
+            </section>
+
+            <section class="card" id="educacao">
+                <h2 data-i18n="educacao_titulo">Educação</h2>
+
+                <p data-i18n="educacao_ifpr">
+                    <strong>Instituto Federal do Paraná (IFPR) – Campus Paranavaí</strong><br>
+                    Engenharia de Software (Integral)<br>
+                    Cursando
+                </p>
+
+                <p data-i18n="educacao_colegio">
+                    <strong>Colégio Paroquial</strong><br>
+                    Ensino Médio Completo
+                </p>
+            </section>
+
+            <section class="card" id="contato">
+                <h2 data-i18n="contato_titulo">Contato</h2>
+                <p>
+                    +55 (44) 99706-4928 <br>
+                    gabriellucimm7@gmail.com <br>
+                    <a href="https://github.com/GabrielLucim">GitHub</a>
+                </p>
+            </section>
+
+        </div>
+    </header>
+
+    <main class="conteudo">
+
+        <section class="card projetos" id="projetos">
+            <h2 data-i18n="projetos_titulo">Projetos</h2>
+
+            <div id="projetos-container"></div>
+
         </section>
 
-        <section class="card" id="habilidades">
-            <h2>Habilidades</h2>
-        
-            <p>
-                <strong>Linguagens com experiência e em estudo:</strong><br>
-                Java, Python, Dart/Flutter, SQL, HTML, JavaScript, CSS, React e C++
-            </p>
-        
-            <p>
-                <strong>Ferramentas e Tecnologias:</strong><br>
-                Git, GitHub, Maven, XAMPP, Flutter, VS Code, Eclipse e PostgreSQL
-            </p>
-        
-            <p>
-                <strong>Conhecimentos:</strong><br>
-                Programação Orientada a Objetos, Estruturas de Dados,
-                Desenvolvimento Web, Integração com APIs, Desenvolvimento para Dispositivos Móveis e
-                Construção de Software
-            </p>
-        </section>
+    </main>
 
-        <section class="card" id="educacao">
-            <h2>Educação</h2>
-        
-            <p>
-                <strong>Instituto Federal do Paraná (IFPR) – Campus Paranavaí</strong><br>
-                Engenharia de Software (Integral)<br>
-                Cursando
-            </p>
-        
-            <p>
-                <strong>Colégio Paroquial</strong><br>
-                Ensino Médio Completo
-            </p>
-        </section>
+    <footer class="rodape">
+        <p>© 2026 Gabriel Dos Anjos Lucim</p>
+        <p>
+            <a href="https://github.com/GabrielLucim" target="_blank">GitHub</a>
+        </p>
+    </footer>
 
-        <section class="card">
-            <h2>Contato</h2>
-            <p>
-                +55 (44) 99706-4928 <br>
-                gabriellucimm7@gmail.com <br>
-				<a href="https://github.com/GabrielLucim">GitHub</a>
-            </p>
-        </section>
+    <script src="js/script.js"></script>
 
-    </div>
-</header>
-
-<main class="conteudo">
-
-    <section class="card projetos">
-        <h2>Projetos</h2>
-
-            <div class="projeto-card">
-                <img src="imagens/projeto1.png" alt="Project Memory Simulator">
-            
-                <h3>Project Memory Simulator</h3>
-            
-                <p>
-                    Simulador visual do funcionamento da memória RAM feito em C++, desenvolvido para fins
-                    educacionais. O projeto mostra como endereços, blocos e acessos são
-                    manipulados internamente, auxiliando estudantes a compreenderem
-                    arquitetura e organização de computadores.
-                </p>
-            
-                <a href="https://github.com/GabrielLucim/project-memory-simulator" target="_blank">Acessar</a>
-                
-            </div>
-
-            <div class="projeto-card">
-                <img src="imagens/projeto2.png" alt="Jogos Java">
-            
-                <h3>Jogos Java</h3>
-            
-                <p>
-                    2 mini jogos desenvolvidos em Java, incluindo
-                    caça-palavras e jogo da descoberta da palavra, lógica, interação com o usuário e manipulação de dados.
-                    Ideal para estudo de programação orientada a objetos e estruturas de dados.
-                </p>
-            
-                <a href="https://github.com/GabrielLucim/JogosJava" target="_blank">Acessar</a>
-            </div>
-
-            <div class="projeto-card">
-                <img src="imagens/projeto3.png" alt="Sistema de Gestão de Frota">
-            
-                <h3>Sistema de Gestão de Frota</h3>
-            
-                <p>
-                    Aplicação Java desenvolvida como projeto Maven, integrando operações de
-                    CRUD com banco de dados. O sistema gerencia veículos, motoristas,
-                    entregas, manutenções e consumo de combustível, utilizando uma arquitetura
-                    modular e orientada a objetos para garantir organização e escalabilidade.
-                </p>
-            
-                <a href="https://github.com/GabrielLucim/sistema-de-gestao-de-frota" target="_blank">Acessar</a>
-            </div>
-
-            <div class="projeto-card">
-                <img src="imagens/projeto4.png" alt="Jogo da Memória">
-            
-                <h3>Jogo da Memória</h3>
-            
-                <p>
-                    Jogo da Memória desenvolvido em HTML, CSS e JavaScript, utilizando uma API
-                    própria em PHP para buscar palavras e registrar partidas via requisições
-                    <code>fetch()</code>. Por usar endpoints PHP, o projeto precisa ser executado
-                    em um servidor local como XAMPP.
-                </p>
-            
-                    <p><strong>Como executar:</strong></p>
-                    <p style="font-size: 0.95em;">
-                        1. Instale XAMPP e abra a pasta <code>htdocs/</code><br>
-                        2. Coloque a pasta do projeto dentro dela<br>
-                        3. Inicie o Apache<br>
-                        4. Acesse no navegador: <code>localhost/Direcione sua pasta do projeto</code>
-                    </p>
-                
-                <a href="https://github.com/GabrielLucim/JogoMemoria" target="_blank">
-                    Acessar
-                </a>
-            </div>
-
-            <div class="projeto-card">
-                <img src="imagens/projeto5.png" alt="Gerenciador de Tarefas">
-            
-                <h3>TaskFlow – Gerenciador de Tarefas</h3>
-            
-                <p>
-                    Aplicação web para criação e organização de tarefas do dia a dia,
-                    desenvolvida em HTML, CSS e JavaScript. O sistema utiliza uma API
-                    em PHP para salvar e carregar tarefas, por isso precisa ser executado
-                    em um servidor local como XAMPP.
-                </p>
-            
-                <a href="https://github.com/GabrielLucim/gerenciador-tarefa" target="_blank">
-                    Acessar
-                </a>
-            </div>
-
-    </section>
-
-</main>
-<footer class="rodape">
-    <p>© 2026 Gabriel Dos Anjos Lucim</p>
-    <p>
-        <a href="https://github.com/GabrielLucim" target="_blank">GitHub</a>
-        
-    </p>
-</footer>
 </body>
+
 </html>
