@@ -18,6 +18,10 @@ const projetosCustomizados = {
     "gerenciador-tarefa": {
         imagem: "imagens/projeto5.png",
         descricao: `Gerenciador de tarefas com API em PHP para salvar e carregar dados. Requer servidor local.`
+    },
+    "gestao_frota": {
+        imagem: "imagens/projeto6.png",
+        descricao: `Aplicação mobile em Dart/ Flutter baseada em sistema de gestão de frota, focada no gerenciamento de veículos e operações.Projeto em desenvolvimento.`
     }
 };
 
