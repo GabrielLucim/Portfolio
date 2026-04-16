@@ -79,6 +79,7 @@ body {
     color: #eeeeee;
 }
 
+
 /* CARDS */
 
 .card {
@@ -97,6 +98,7 @@ body {
 
 .card p {
     color: #eaeaea;
+    margin-bottom: 15px;
 }
 
 /* LINKS */

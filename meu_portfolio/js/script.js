@@ -69,8 +69,13 @@ const textos = {
         perfil_texto: "Sou estudante do Instituto Federal do Paraná, atuo na área de Tecnologia da Informação como desenvolvedor em projetos.",
 
         sobre_titulo: "Sobre mim",
-        sobre_texto: "Tenho 19 anos, estudo programação desde 2021, possuo ótima comunicação, conhecimento e experiência pedagógica com a aplicação de minicursos, além de experiência como desenvolvedor",
+        sobre_texto: `
+    <p>Tenho 19 anos e estudo programação desde 2021. Sempre fui muito atraído pela área de tecnologia, principalmente pela curiosidade constante de aprender sobre o novo e pelas possibilidades que surgem a todo momento. Gosto de aprender coisas novas e me manter atualizado, o que me motiva a buscar conhecimento continuamente.</p>
 
+    <p>Minha paixão por jogos também foi um dos fatores que despertaram meu interesse pela programação, levando-me a querer entender como sistemas são construídos e como a tecnologia pode transformar ideias em soluções reais.</p>
+
+    <p>Possuo boa comunicação e experiência pedagógica com a aplicação de minicursos e organização de eventos, o que me permite compartilhar conhecimento de forma clara e objetiva. Além disso, tenho experiência como desenvolvedor, atuando na criação de projetos que envolvem diferentes tecnologias e desafios práticos.</p>
+    `,
         habilidades_titulo: "Habilidades",
         habilidades_linguagens: "<strong>Linguagens com experiência e em estudo:</strong><br>Java, Python, Dart/Flutter, SQL, HTML, JavaScript, CSS, React e C++",
         habilidades_ferramentas: "<strong>Ferramentas e Tecnologias:</strong><br>Git, GitHub, Maven, XAMPP, Flutter, VS Code, Eclipse e PostgreSQL",
@@ -94,7 +99,13 @@ const textos = {
         perfil_texto: "I am a student at Instituto Federal do Paraná, working in Information Technology as a developer.",
 
         sobre_titulo: "About me",
-        sobre_texto: "I am 19 years old, studying programming since 2021 with experience as a developer.",
+        sobre_texto: `
+    <p>I am 19 years old and have been studying programming since 2021. I have always been very attracted to the technology field, mainly due to the constant curiosity to learn about new things and the possibilities that emerge all the time. I enjoy learning new things and staying up to date, which motivates me to continuously seek knowledge.</p>
+
+    <p>My passion for games was also one of the factors that sparked my interest in programming, leading me to understand how systems are built and how technology can turn ideas into real solutions.</p>
+
+    <p>I have strong communication skills and pedagogical experience through teaching workshops and organizing events, which allows me to share knowledge clearly and effectively. In addition, I have experience as a developer, working on projects involving different technologies and practical challenges.</p>
+    `,
 
         habilidades_titulo: "Skills",
         habilidades_linguagens: "<strong>Languages:</strong><br>Java, Python, Dart/Flutter, SQL, HTML, JavaScript, CSS, React and C++",
